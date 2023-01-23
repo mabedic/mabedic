@@ -8,7 +8,7 @@ webdriver_options .add_argument('headless')
 chromedriver = 'C:\web_driver/chromedriver.exe'
 driver = webdriver.Chrome(chromedriver, options=webdriver_options)
 
-req1 = requests.get('https://www.mafra.go.kr/FMD-AI2/2177/subview.do') #URL 불러오기
+req1 = requests.get('https://www.mafra.go.kr/FMD-AI2/2179/subview.do') #URL 불러오기
 html1 = req1.text #URL HTML 텍스트만 불러오기
 soup1 = BeautifulSoup(html1, 'html.parser')
 post = soup1.find("tr") #html <tr> 부분만 불러오기
